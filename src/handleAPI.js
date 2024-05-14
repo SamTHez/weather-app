@@ -1,6 +1,6 @@
 const handleAPI = (() => {
     const getWeatherData = async (location) => {
-        const API_URL = `http://api.weatherapi.com/v1/forecast.json?key=7c56b0175bcd48b58d901542242004&q=${location}&days=3&aqi=no&alerts=no`;
+        const API_URL = `https://api.weatherapi.com/v1/forecast.json?key=7c56b0175bcd48b58d901542242004&q=${location}&days=3&aqi=no&alerts=no`;
         const res = await fetch(API_URL);
         return await res.json();
     }
